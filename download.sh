@@ -1,3 +1,3 @@
 #!/bin/bash
 
-wget --mirror --convert-links --adjust-extension --page-requisites --no-parent $1
+httrack "$1" -O ~/docs/$1 
