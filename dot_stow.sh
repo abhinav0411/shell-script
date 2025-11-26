@@ -6,7 +6,7 @@ read file_name
 
 mkdir -p "$HOME/dotfiles/$file_name/.config/$file_name"
 
-cp -r "$HOME/.config/$file_name/"* "$HOME/dotfiles/$file_name/.config/$file_name"
+cp -r "$HOME/.config/$file_name/"/. "$HOME/dotfiles/$file_name/.config/$file_name"
 
 if [ -d "$HOME/.config/$file_name.bak" ]; then
     echo "Backup already exists: $HOME/.config/$file_name.bak"
